@@ -67,6 +67,9 @@ RUN apt-get install -y libzmq3-dev --no-install-recommends
 # Adding Perl kernel
 RUN cpanm Devel::IPerl
 
+# Support SSL
+RUN cpanm IO::Socket::SSL
+
 VOLUME /notebooks
 
 # Clean cache

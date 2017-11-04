@@ -69,6 +69,7 @@ RUN cpanm Devel::IPerl
 
 # Support SSL
 RUN cpanm IO::Socket::SSL
+RUN cpanm LWP::Protocol::https
 
 VOLUME /notebooks
 
